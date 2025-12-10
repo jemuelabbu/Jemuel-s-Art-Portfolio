@@ -1,91 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Art Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Navigation Bar -->
-<nav class="navbar">
-<ul>
-<li><a href="#top">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <!-- HEADER / TITLE SECTION -->
+    <header class="title-page" id="home">
+        <div class="title-page-content">
+            <h1>Jemuel</h1>
+            <div class="jemuel-arts">Arts & Portfolio</div>
+        </div>
+    </header>
 
+    <!-- ABOUT ME -->
+    <section class="about" id="about">
+        <h3>About Me</h3>
+        <p>
+            Welcome to my portfolio! I create digital and traditional art,
+            exploring color, expression, and storytelling.
+        </p>
+    </section>
 
-<!-- Header -->
-<header class="title-page" id="top">
-<div class="title-page-content">
-<h1>Art Portfolio</h1>
-<p class="jemuel-arts">Jemuel Arts</p>
-</div>
-</header>
+    <!-- CONTACTS (now below About Me) -->
+    <section class="contact" id="contact">
+        <div class="header-contacts">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="mailto:jemuel@email.com">Email</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
 
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="carousel-container">
+            <div class="carousel-viewport">
+                <div class="carousel-track">
+                    <div class="carousel-panel"><img src="images/artwork0.png"></div>
+                    <div class="carousel-panel"><img src="images/artwork1.png"></div>
+                    <div class="carousel-panel"><img src="images/artwork2.png"></div>
+                    <div class="carousel-panel"><img src="images/artwork3.png"></div>
+                    <div class="carousel-panel"><img src="images/artwork4.png"></div>
+                    <div class="carousel-panel"><img src="images/artwork5.png"></div>
+                    <div class="carousel-panel"><img src="images/artwork6.png"></div>
+                    <div class="carousel-panel"><img src="images/artwork7.png"></div>
+                </div>
+            </div>
 
-<!-- About -->
-<section class="about" id="about">
-<h3>About Me</h3>
-<p>Hi! I’m JemuelArts, a digital artist from the Philippines. I create different kinds of digital artwork and enjoy exploring new styles. Thanks for visiting my portfolio.</p>
-</section>
-
-
-<!-- Contact moved below About -->
-<section class="contact" id="contact">
-<div class="header-contacts">
-<a href="mailto:your-artsjem@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-<a href="https://x.com/JemuelArts" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-<a href="https://vgen.co/JemuelArts" target="_blank" rel="noopener noreferrer" aria-label="VGen"><i class="fas fa-user"></i></a>
-</div>
-</section>
-
-
-<!-- Carousel -->
-<section class="carousel-container" id="gallery">
-<div class="carousel-viewport">
-<div class="carousel-track">
-<div class="carousel-panel"><img src="images/artwork0.png" alt="Artwork 0"></div>
-<div class="carousel-panel"><img src="images/artwork1.png" alt="Artwork 1"></div>
-<div class="carousel-panel"><img src="images/artwork2.png" alt="Artwork 2"></div>
-<div class="carousel-panel"><img src="images/artwork3.png" alt="Artwork 3"></div>
-<div class="carousel-panel"><img src="images/artwork4.png" alt="Artwork 4"></div>
-<div class="carousel-panel"><img src="images/artwork5.png" alt="Artwork 5"></div>
-<div class="carousel-panel"><img src="images/artwork6.png" alt="Artwork 6"></div>
-<div class="carousel-panel"><img src="images/artwork7.png" alt="Artwork 7"></div>
-</div>
-</div>
-
-
-<div class="carousel-buttons">
-<button class="carousel-btn prev">❮</button>
-<button class="carousel-btn next">❯</button>
-</div>
-</section>
-
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox">
-<span class="lightbox-close">&times;</span>
-<img class="lightbox-img" src="" alt="Artwork">
-<button class="lightbox-prev">❮</button>
-<button class="lightbox-next">❯</button>
-</div>
-
-
-<!-- JS -->
-<script src="carousel.js"></script>
-<script src="lightbox.js"></script>
-
+            <div class="carousel-buttons">
+                <button class="carousel-btn" id="prev">‹</button>
+                <button class="carousel-btn" id="next">›</button>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
