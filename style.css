@@ -12,19 +12,19 @@ body {
 
 /* TITLE SECTION */
 .title-page {
-  position: relative; /* Needed to position text inside */
+  position: relative; 
   background-image: url('images/header.png');
-  background-size: cover;      /* Fills container, keeps aspect ratio */
-  background-position: center; /* Center image */
+  background-size: cover;     
+  background-position: center; 
   background-repeat: no-repeat;
 
-  height: 800px; /* Adjust as needed */
+  height: 800px; 
 }
 
 .title-page-content {
-  position: absolute;   /* Position text over the image */
-  top: 20px;            /* Distance from top */
-  left: 50%;            /* Center horizontally */
+  position: absolute;   
+  top: 20px;           
+  left: 50%;         
   transform: translateX(-50%);
   text-align: center;
   color: white;
