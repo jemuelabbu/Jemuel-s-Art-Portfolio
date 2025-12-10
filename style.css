@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
   background: #F4EAD1;
@@ -10,20 +14,59 @@ body {
   padding: 0;
 }
 
+/* NAVIGATION BAR */
+.navigation {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* transparent background */
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-family: 'Noto Serif', serif;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.nav-bar a:hover {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
 /* TITLE SECTION */
 .title-page {
   position: relative; 
-  background-image: url('images/header.png');
+  background-image: url('images/art5.png');
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat;
 
-  height: 800px; 
+  height: 1200px; 
+}
+
+.title-page,
+.about,
+.gallery {
+  scroll-margin-top: 80px; /* height of navbar */
 }
 
 .title-page-content {
   position: absolute;   
-  top: 20px;           
+  top: 70px;           
   left: 50%;         
   transform: translateX(-50%);
   text-align: center;
@@ -51,7 +94,7 @@ body {
 
 .header-contacts a {
   font-size: 32px;
-  color: white;
+  color: #ffd700;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -60,8 +103,16 @@ body {
 }
 
 .header-contacts a:hover {
-  color: #ffd700;
+  color: #076aa3;
   transform: scale(1.1);
+}
+
+.about .header-contacts a {
+  color: black;
+}
+
+.about .header-contacts a:hover {
+  color: #076aa3;
 }
 
 /* ABOUT ME */
